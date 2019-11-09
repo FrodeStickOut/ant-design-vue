@@ -1,32 +1,20 @@
 <template>
   <div id="app">
+    <div class="aisy-title">欢迎来到&nbsp;aisy&nbsp;学习成长小组</div>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/"><a-button type="link">Home</a-button></router-link> |
+      <router-link to="/about"
+        ><a-button type="link">请点击这里了解vue-aisy</a-button></router-link
+      >
     </div>
     <router-view />
   </div>
 </template>
 
 <style lang="less">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.aisy-title {
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  font-size: 40px;
+  color: forestgreen;
 }
 </style>
